@@ -24,7 +24,7 @@ public class HelloController {
      */
     @GetMapping("/api/hello")
     public String hello() {
-        return "Danny, Welcome to CIS-530 Course!";
+        return "Welcome to CIS 530 - Week 1 REST API!";
     } //end hello
 
     /**
@@ -38,6 +38,8 @@ public class HelloController {
         data.put("course", "CIS-530");
         data.put("week", 1);
         data.put("technology", "Spring Boot");
+        data.put("university","Bellevue University");
+        data.put("semester","Fall 2026");
 
         return data;
     } //end info 
